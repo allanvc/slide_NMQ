@@ -73,12 +73,12 @@ cat('<iframe src="./assets/widgets/plotly_orcamento.html" width="90%" height="50
 
 > - <img src="./assets/img/indicador2.png" style="float: center; width: 90%; margin:auto">
 
-> - <img src="./assets/img/planilha_emendas.PNG" style="float: center; width: 100%; margin:auto">
 
 *** =right
 
 <br>
-> - <img src="./assets/img/survival_bias.jpg" style="float: center; width: 70%; margin:auto">
+<br>
+> - <img src="./assets/img/survival_bias.jpg" style="float: center; width: 80%; margin:auto">
 
 
 
