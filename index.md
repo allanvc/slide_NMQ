@@ -63,14 +63,29 @@ ul.nav li{ font-size: 18px; line-height: 24px;}
 
 
 
+--- &twocol
+## Maus Exemplos
+<br>
+*** =left
+> - <img src="./assets/img/indicador1.png" style="float: center; width: 90%; margin:auto">
+
+> - <img src="./assets/img/indicador2.png" style="float: center; width: 90%; margin:auto">
+
+> - <img src="./assets/img/planilha_emendas.PNG" style="float: center; width: 100%; margin:auto">
+
+*** =right
+
+<br>
+> - <img src="./assets/img/survival_bias.jpg" style="float: center; width: 70%; margin:auto">
+
+
+
 --- .class #id
 ## Maus Exemplos
-> - 1) Mostrar um exemplo de um indicador tosco de um programa que não mede nada
 
-> - 2) amostragem PNAE - falar sobre o exemplo da amostragem PNAE vs história royal airforce
-  +  <img src="./assets/img/survival_bias.jpg" style="float: center; width: 20%; margin:auto">
+<br>
 
-> - falar sobre a planilha de emendas DIFIN
+<img src="./assets/img/planilha_emendas.PNG" style="float: center; width: 100%; margin:auto">
 
 
 
@@ -112,7 +127,7 @@ ul.nav li{ font-size: 18px; line-height: 24px;}
 <br>
 Qual seria então o papel do Núcleo?
 
-> .fragment `Tratar problemas` cuja origem ou solução estão nos dados utilizados pela autarquia e `produzir insights` a partir destes dados de modo a reduzir gargalos, otimizar o trabalho, gerar economia de recursos e confeccionar indicadores, contribuindo para aprimorar a gestão estratégica do FNDE.
+> .fragment `Tratar problemas` cuja origem ou solução estão nos dados utilizados pela autarquia e `produzir conhecimento` a partir destes dados de modo a contribuir para a melhora da gestão da educação brasileira.
 
 
 
@@ -138,7 +153,7 @@ Qual seria então o papel do Núcleo?
 <br>
 > - coordenação de parcerias técnicas <img src="./assets/img/check_mark.svg" style="width: 2%">
 <br>
-> - automatização e prototipação de soluções <img src="./assets/img/check_mark.svg" style="width: 2%">
+> - otimização de rotinas e prototipação de soluções <img src="./assets/img/check_mark.svg" style="width: 2%">
 
 
 
@@ -150,8 +165,7 @@ Qual seria então o papel do Núcleo?
 <br>
 > - sistema de concorrência de demandas $\Rightarrow$ projetos estratégicos
     + presidência
-    + diretorias
-    + prospecção do Núcleo junto as áreas
+    + diretorias/prospecção do Núcleo junto as áreas
 
 
 
@@ -300,10 +314,12 @@ FisFa também transforma dados em informação:
 <br>
 > - Abrir os dados do FNDE para a comunidade acadêmica
 <br>
-> - Receber estudantes de pós-graduação (consultoria) e graduação (estágio)
-  + criar um prêmio de trabalhos de conclusão de curso/dissertações/teses voltado para a análise de dados do FNDE
+> - Receber estudantes de pós-graduação e graduação
+  + criar um prêmio para trabalhos de conclusão de curso/dissertações/teses voltados para a análise de dados do FNDE
   + no caso de pós-graduação, agraciar o vencedor com uma vaga de consultoria para tocar o projeto
-  + no caso de graduação, agraciar o vencedor com uma vaga de estágio
+  + oferecer bolsas de estudos estudantes com projetos promissores de pós-graduação
+  + oferecer vagas de estágio para estudantes com projetos de conclusão de curso promissores
+
 
 
 --- .class #id
