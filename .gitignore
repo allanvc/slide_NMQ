@@ -1,0 +1,7 @@
+
+dados/*.csv
+
+dados/*.xlsx
+
+dados/modLog.rds
+.Rproj.user

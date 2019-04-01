@@ -1,0 +1,272 @@
+
+
+
+# reg log credit risk FIES
+# baseado em: http://rpubs.com/vikash_datascientist/182183
+
+
+library(data.table)
+
+loc <- file.choose()
+
+df <- fread(loc)
+
+# df <- as.data.frame(df, stringsAsFactors = FALSE)
+
+df <- as.data.frame(df, stringsAsFactors = FALSE)
+
+str(df)
+
+
+# var. dependente
+
+library(dplyr)
+
+df <- df %>%
+  select(1:3, 5:6, 8:9, 11:17, 19, 29, 30, 33:36)
+
+str(df)
+
+# help("case_when")
+
+df <- df %>%
+  mutate(loan_status = case_when(VL_INADIMPLENTE > 0 ~ "1", TRUE ~ "0"))
+
+# ajustando idade
+
+library(lubridate)
+
+str(df)
+
+# help("difftime")
+
+df <- df %>%
+  mutate(idade = floor(decimal_date(now()) - decimal_date(ymd_hms(DT_NASCIMENTO))))
+
+# now() instead of today, pq today() nao eh POSIXct
+
+
+# limpando
+
+df <- df %>%
+  select(-VL_LIBERADO,-DT_NASCIMENTO)
+
+
+# colocando log da renda familiar e log da rend per capita
+
+# df <- df %>%
+#   mutate(log_renda_familiar = log(VL_RENDA_FAMILIAR_BRUTA_MENSAL),
+#          log_renda_percapita = log(VL_RENDA_PERCAPTA))
+
+#limpando 2
+# df <- df %>%
+#   select(-c(VL_RENDA_FAMILIAR_BRUTA_MENSAL, VL_RENDA_PESSOA_BRUTA_MENSAL, 
+#             VL_RENDA_PERCAPTA, NU_CEP, NU_CPF, CO_INSCRICAO, 
+#             NU_DIAS_ATRASO, NO_ESTUDANTE))
+
+df <- df %>%
+  select(-c(VL_RENDA_PESSOA_BRUTA_MENSAL, 
+            NU_CEP, NU_CPF, CO_INSCRICAO, 
+            NU_DIAS_ATRASO, NO_ESTUDANTE))
+
+df <- df %>%
+  na.omit()
+
+str(df)
+
+# df <- df %>%
+#   mutate_if(is.character, as.factor)
+
+
+# transformando por grandes regiões - deixar estados mesmo pela questão de dificuldade dos estados
+
+str(df)
+
+df <- df %>%
+  mutate(loan_status = as.numeric(as.character(loan_status)))
+
+df <- df %>%
+  select(-VL_INADIMPLENTE)
+
+table(df$SG_SEXO)
+
+table(df$ST_DEFICIENCIA)
+
+table(df$DS_RACA_COR)
+
+table(df$DS_ESTADO_CIVIL)
+
+table(df$ST_BOLSISTA_PROUNI)
+
+df <- df %>%
+  mutate(SG_SEXO = case_when(SG_SEXO == "F" ~ 1, TRUE ~ 2),
+         ST_DEFICIENCIA = case_when(ST_DEFICIENCIA == "N" ~ 1, TRUE ~ 2),
+         DS_RACA_COR = case_when(DS_RACA_COR == "AMARELO" ~ 1,
+                                 DS_RACA_COR == "BRANCO" ~ 2,
+                                 DS_RACA_COR == "INDIO" ~ 3,
+                                 DS_RACA_COR == "NEGRO" ~ 4,
+                                 TRUE ~ 5),
+         DS_ESTADO_CIVIL = case_when(DS_ESTADO_CIVIL == "CASADO" ~ 1,
+                                     DS_ESTADO_CIVIL == "DIVORCIADO" ~ 2,
+                                     DS_ESTADO_CIVIL == "SEPARADO" ~ 3,
+                                     DS_ESTADO_CIVIL == "SOLTEIRO" ~ 4,
+                                     DS_ESTADO_CIVIL == "UNIAO ESTAVEL" ~ 5,
+                                     TRUE ~ 6),
+         ST_BOLSISTA_PROUNI = case_when(ST_BOLSISTA_PROUNI == "N" ~ 1, TRUE ~ 2)
+  )
+
+str(df)           
+
+df <- df %>%
+  mutate(SG_UF = case_when(SG_UF == "AC" ~ 1,
+                           SG_UF == "AL"~2,
+                           SG_UF == "AP"~3,
+                           SG_UF == "AM"~3,
+                           SG_UF == "BA"~4,
+                           SG_UF == "CE"~5,
+                           SG_UF == "DF"~6,
+                           SG_UF == "ES"~7,
+                           SG_UF == "GO"~8,
+                           SG_UF == "MA"~9,
+                           SG_UF == "MT"~10,
+                           SG_UF == "MS"~11,
+                           SG_UF == "MG"~12,
+                           SG_UF == "PA"~13,
+                           SG_UF == "PB"~14,
+                           SG_UF == "PR"~15,
+                           SG_UF == "PE"~16,
+                           SG_UF == "PI"~17,
+                           SG_UF == "RJ"~18,
+                           SG_UF == "RN"~19,
+                           SG_UF == "RS"~20,
+                           SG_UF == "RO"~21,
+                           SG_UF == "RR"~22,
+                           SG_UF == "SP"~23,
+                           SG_UF == "SC"~24,
+                           SG_UF == "SE"~25,
+                           SG_UF == "TO"~26))
+
+
+str(df)                                 
+
+
+# df <- df %>%
+#   select(-NU_ANO_CONCLUSAO_ENSINO_MEDIO)
+# transformando outras variaveis de factors em nros
+
+
+
+
+### preparing the dataset for prediction
+
+library(caTools)
+
+set.seed(1984)
+spl = sample.split(df$loan_status, 0.7)
+train = subset(df, spl == TRUE)
+test = subset(df, spl == FALSE)
+
+
+modLog = glm(loan_status ~ . , data=train, family=binomial(link = "logit"))
+summary(modLog)
+# retirar ano conclusao ens medio e ST_DEFICIENCIA
+
+# accuracy
+
+test$predicted.risk = predict(modLog, newdata=test, type="response")
+
+table(test$loan_status, as.numeric(test$predicted.risk >= 0.5))
+
+overall_accuracy = (61064 + 35832)/nrow(test)
+sensitivity = 35832/(27264+35832) 
+specificity = 61064 / (61064+21795)
+
+## tentando melhorar o modelo
+
+res <- cor(df)
+round(res, 2)
+
+# cor entre renda per capita e renda familiar eh alto - deixar familiar bruta por conta de fiador
+# mas eh melhor renda per capita pegaria nro pessoas na familia
+
+
+#### ===== novo modelo retirando-se variaveis nao significativas e com alta correlacao
+
+# df <- df %>%
+#   select(-c(VL_RENDA_FAMILIAR_BRUTA_MENSAL, NU_ANO_CONCLUSAO_ENSINO_MEDIO, ST_DEFICIENCIA,
+#             CO_FASE_BANCO))
+
+df <- df %>%
+  select(-c(VL_RENDA_FAMILIAR_BRUTA_MENSAL, NU_ANO_CONCLUSAO_ENSINO_MEDIO, ST_DEFICIENCIA,
+            CO_FASE_BANCO))
+
+df <- df %>%
+  select(-CO_FASE_BANCO)
+
+library(caTools)
+
+set.seed(1984)
+spl2 = sample.split(df$loan_status, 0.7)
+train2 = subset(df, spl2 == TRUE)
+test2 = subset(df, spl2 == FALSE)
+
+
+modLog2 = glm(loan_status ~ . , data=train2, family=binomial(link = "logit"))
+summary(modLog2)
+
+
+# accuracy
+
+test2$predicted.risk = predict(modLog2, newdata=test2, type="response")
+
+table(test2$loan_status, as.numeric(test2$predicted.risk >= 0.5))
+
+overall_accuracy = (61064 + 35832)
+sensitivity = 35832/(27264+35832) 
+specificity = 61064 / (61064+21795)
+
+
+###======================= com SVM
+install.packages("e1071")
+library(e1071)
+
+x <- subset(df, select=-df$loan_status)
+y <- df$loan_status
+
+svm_model <- svm(loan_status ~ ., data=df)
+summary(svm_model)
+
+
+## SVM 2
+install.packages("caret")
+
+library(caret)
+
+# partition
+set.seed(3033)
+intrain <- createDataPartition(y = df$loan_status, p= 0.7, list = FALSE)
+training <- df[intrain,]
+testing <- df[-intrain,]
+
+dim(training); dim(testing);
+
+# target variable to factor
+training$loan_status = factor(training$loan_status)
+
+
+trctrl <- trainControl(method = "repeatedcv", number = 10, repeats = 3)
+
+str(training)
+
+set.seed(3233)
+svm_Linear <- train(loan_status ~., data = training, method = "svmLinear",
+                    trControl=trctrl,
+                    preProcess = c("center", "scale"),
+                    tuneLength = 10)
+
+
+svm_Linear
+
+test_pred <- predict(svm_Linear, newdata = testing)
+
+confusionMatrix(test_pred, testing$V14 )
