@@ -103,7 +103,7 @@ ul.nav li{ font-size: 18px; line-height: 24px;}
 *** =right
 <br>
 <br>
-> + .fragment `análise de dados amadora`
+> + .fragment `análise de dados pouco profissional`
 <br>
 <br>
 > + projeções equivocadas
@@ -130,7 +130,7 @@ Qual seria então o papel do Núcleo?
 
 
 --- .class #id
-## Localização do Núcleo
+## Localização
 <br>
 <br>
 <img src="./assets/img/organograma_NuQnt2.PNG" style="float: center; width: 80%; margin-right: 1%; margin-bottom: 0.5em;">
@@ -156,7 +156,7 @@ Qual seria então o papel do Núcleo?
 
 
 --- .class #id
-## Funcionamento do Núcleo
+## Funcionamento
 <br>
 <br>
 > - análise contínua de dados dos programas e formulação de indicadores
@@ -168,7 +168,7 @@ Qual seria então o papel do Núcleo?
 
 
 --- .class #id
-## Funcionamento do Núcleo
+## Funcionamento
 <br>
 <br>
 <video width="480" height="360" controls >
