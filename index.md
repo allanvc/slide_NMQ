@@ -64,7 +64,7 @@ ul.nav li{ font-size: 18px; line-height: 24px;}
 
 
 --- .class #id
-## (Maus) Exemplos
+## Exemplos (do que não fazer)
 
 <br>
 
@@ -73,7 +73,7 @@ ul.nav li{ font-size: 18px; line-height: 24px;}
 
 
 --- &twocol
-## (Maus) Exemplos
+## Exemplos (do que não fazer)
 <br>
 *** =left
 > - <img src="./assets/img/indicador1.png" style="float: center; width: 100%; margin:auto">
@@ -182,8 +182,8 @@ Qual seria então o papel do Núcleo?
 <br>
 <br>
 > - rodadas de capacitação com as diretorias
-  + intro à análise de dados 
-  + R & Python
+  + Análise de Dados introdutória 
+  + R, Python & SQL
   + Estatística Básica
   
 
@@ -219,6 +219,11 @@ Qual seria então o papel do Núcleo?
 <img src="./assets/img/modLog.png" style="float: center; width: 80%; margin:auto">
 
 *** =right
+
+
+```
+## Error in desc(Var1): could not find function "desc"
+```
 
 <img src="assets/fig/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
 

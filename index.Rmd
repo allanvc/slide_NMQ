@@ -66,7 +66,7 @@ cat('<iframe src="./assets/widgets/plotly_orcamento.html" width="90%" height="50
 
 
 --- .class #id
-## (Maus) Exemplos
+## Exemplos (do que não fazer)
 
 <br>
 
@@ -75,7 +75,7 @@ cat('<iframe src="./assets/widgets/plotly_orcamento.html" width="90%" height="50
 
 
 --- &twocol
-## (Maus) Exemplos
+## Exemplos (do que não fazer)
 <br>
 *** =left
 > - <img src="./assets/img/indicador1.png" style="float: center; width: 100%; margin:auto">
@@ -184,8 +184,8 @@ Qual seria então o papel do Núcleo?
 <br>
 <br>
 > - rodadas de capacitação com as diretorias
-  + intro à análise de dados 
-  + R & Python
+  + Análise de Dados introdutória 
+  + R, Python & SQL
   + Estatística Básica
   
 
