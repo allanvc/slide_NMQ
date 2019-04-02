@@ -236,14 +236,34 @@ specificity = testTable[1,1]/sum(testTable[1,]) # soh com amortizacao fica bom
 # confusion_matrix <- as.data.frame(table(predicted_class, actual_class))
 library(ggplot2)
 plotly_pallette <- c('#1F77B4', '#FF7F0E', '#2CA02C', '#D62728')
+library(dplyr)
+# p <- ggplot(data = confusion_matrix,
+#             mapping = aes(x = Var2,
+#                           y = Var1)) +
+#   geom_tile(aes(fill = Freq)) +
+#   geom_text(aes(label = sprintf("%1.0f", Freq)), vjust = 1) +
+#   scale_fill_gradient(low = '#2CA02C',
+#                       high = '#FF7F0E',
+#                       trans = "log")+ # if your results aren't quite as clear as the above exampl
+#   # scale_x_discrete(limits = rev(confusion_matrix$Var2))+
+#   
+#   theme_bw()+
+#   # theme(panel.border = element_blank())+ # para ficar igual o plotly
+#   theme(legend.position = "none")+
+#   labs(x = "predicted", y = "original")
+
+## ordem correta:
+
 p <- ggplot(data = confusion_matrix,
             mapping = aes(x = Var2,
-                          y = Var1)) +
+                          y = reorder(Var1, desc(Var1)))) +
   geom_tile(aes(fill = Freq)) +
   geom_text(aes(label = sprintf("%1.0f", Freq)), vjust = 1) +
   scale_fill_gradient(low = '#2CA02C',
                       high = '#FF7F0E',
                       trans = "log")+ # if your results aren't quite as clear as the above exampl
+  # scale_x_discrete(limits = rev(confusion_matrix$Var2))+
+  
   theme_bw()+
   # theme(panel.border = element_blank())+ # para ficar igual o plotly
   theme(legend.position = "none")+

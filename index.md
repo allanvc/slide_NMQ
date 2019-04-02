@@ -63,29 +63,27 @@ ul.nav li{ font-size: 18px; line-height: 24px;}
 
 
 
---- &twocol
-## Maus Exemplos
-<br>
-*** =left
-> - <img src="./assets/img/indicador1.png" style="float: center; width: 90%; margin:auto">
-
-> - <img src="./assets/img/indicador2.png" style="float: center; width: 90%; margin:auto">
-
-
-*** =right
-
-<br>
-<br>
-> - <img src="./assets/img/survival_bias.jpg" style="float: center; width: 80%; margin:auto">
-
-
-
 --- .class #id
-## Maus Exemplos
+## (Maus) Exemplos
 
 <br>
 
 <img src="./assets/img/planilha_emendas.PNG" style="float: center; width: 100%; margin:auto">
+
+
+
+--- &twocol
+## (Maus) Exemplos
+<br>
+*** =left
+> - <img src="./assets/img/indicador1.png" style="float: center; width: 100%; margin:auto">
+
+> - <img src="./assets/img/indicador2.png" style="float: center; width: 100%; margin:auto">
+
+
+*** =right
+
+> - <img src="./assets/img/survival_bias.jpg" style="float: center; width: 90%; margin:auto">
 
 
 
@@ -170,7 +168,7 @@ Qual seria então o papel do Núcleo?
 
 
 --- .class #id
-## Funcionamento do NMQ
+## Funcionamento do Núcleo
 <br>
 <br>
 <video width="480" height="360" controls >
@@ -191,7 +189,7 @@ Qual seria então o papel do Núcleo?
 
 
 --- .class #id
-## Como o núcleo pode ajudar?
+## Como o Núcleo pode ajudar?
 
 > - <img src="./assets/img/inadimplencia_FIES.PNG" style="float: center; width: 50%; margin:auto">
 
@@ -202,7 +200,7 @@ Qual seria então o papel do Núcleo?
 
 
 --- &twocol
-## Como o núcleo pode ajudar?
+## Como o Núcleo pode ajudar?
 
 *** =left
 
@@ -214,7 +212,7 @@ Qual seria então o papel do Núcleo?
 
 
 --- &twocol
-## Como o núcleo pode ajudar?
+## Como o Núcleo pode ajudar?
 
 *** =left
 
@@ -237,7 +235,7 @@ Qual seria então o papel do Núcleo?
 ## [1] "specificity: 0.57"
 ```
 
-- falar do que um modelo bom de avaliação de risco de crédito para o sistema financeiro (mostrar aquele gráfico)
+<!-- falar do que um modelo bom de avaliação de risco de crédito para o sistema financeiro (mostrar aquele gráfico) -->
 
 
 
@@ -268,7 +266,7 @@ Qual seria então o papel do Núcleo?
 ## FisFa - Fiscaliza Fatura FIES
 <br>
 <br>
-FisFa também transforma dados em informação:
+<!-- FisFa também transforma dados em informação: -->
 
 <video width="480" height="320" controls >
 <source src="./assets/img/FisFa_video2.mp4" type="video/mp4">
