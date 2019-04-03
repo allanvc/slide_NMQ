@@ -220,6 +220,24 @@ Qual seria então o papel do Núcleo?
 
 *** =right
 
+
+```
+## 
+## Attaching package: 'dplyr'
+```
+
+```
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+```
+
+```
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
+
 <img src="assets/fig/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
 
 
@@ -315,8 +333,8 @@ Qual seria então o papel do Núcleo?
 > - Receber estudantes de pós-graduação e graduação
   + criar um prêmio para trabalhos de conclusão de curso/dissertações/teses voltados para a análise de dados do FNDE
   + no caso de pós-graduação, agraciar o vencedor com uma vaga de consultoria para tocar o projeto
-  + oferecer bolsas de estudos estudantes com projetos promissores de pós-graduação
-  + oferecer vagas de estágio para estudantes com projetos de conclusão de curso promissores
+  + oferecer bolsas de estudos a estudantes de pós-graduação com projetos promissores 
+  + oferecer vagas de estágio para estudantes de graduação com projetos de conclusão de curso promissores
 
 
 
@@ -338,7 +356,7 @@ Qual seria então o papel do Núcleo?
 
 
 --- .segue bg:grey
-# Obrigado!!
+# Obrigado.
 
 <!-- como colocar figuras ao lado de palavras varias vezes em html -->
 <div>
@@ -346,10 +364,10 @@ Qual seria então o papel do Núcleo?
     <img src="./assets/img/rball.png" style="float: center; width: 5%;"> com 
     <img src="./assets/img/slidifylogo2.png" style="float: center; width: 12%;">,
     <img src="./assets/img/plotlylogo.png" style="float: center; width: 7%;"> e
-    <img src="./assets/img/ggplotlogo.png" style="float: center; width: 7%;"> !! </p>
+    <img src="./assets/img/ggplotlogo.png" style="float: center; width: 7%;"> . </p>
 </div>
 
-Códigos e apresentação disponíveis no<img src="./assets/img/gitlogo5.png" style="float: center; width: 13%;">em:
+Códigos e apresentação disponíveis no<img src="./assets/img/gitlogo5.png" style="float: center; width: 13%;">:
 <br>
 <p>
 <a href="http://github.com/allanvc/" style="color:black">http://github.com/allanvc/</a>
