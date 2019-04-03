@@ -255,8 +255,8 @@ library(dplyr)
 ## ordem correta:
 
 p <- ggplot(data = confusion_matrix,
-            mapping = aes(x = Var2,
-                          y = reorder(Var1, desc(Var1)))) +
+            mapping = aes(x = reorder(Var2, desc(Var2)),
+                          y = Var1)) +
   geom_tile(aes(fill = Freq)) +
   geom_text(aes(label = sprintf("%1.0f", Freq)), vjust = 1) +
   scale_fill_gradient(low = '#2CA02C',
@@ -267,7 +267,7 @@ p <- ggplot(data = confusion_matrix,
   theme_bw()+
   # theme(panel.border = element_blank())+ # para ficar igual o plotly
   theme(legend.position = "none")+
-  labs(x = "predicted", y = "original")
+  labs(x = "predicted class", y = "actual class")
 
 saveRDS(p, "./dados/confusion_matrix_plot.rds")
 

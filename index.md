@@ -45,7 +45,7 @@ ul.nav li{ font-size: 18px; line-height: 24px;}
 
 
 --- .segue bg:grey
-# Como o FNDE manipula e utiliza esse grande volume de dados para gerar informação?
+# Como o FNDE manipula e utiliza esse grande volume de dados?
 
 
 
@@ -133,7 +133,7 @@ Qual seria então o papel do Núcleo?
 ## Localização
 <br>
 <br>
-<img src="./assets/img/organograma_NuQnt2.PNG" style="float: center; width: 80%; margin-right: 1%; margin-bottom: 0.5em;">
+<img src="./assets/img/organograma_NuQnt3.PNG" style="float: center; width: 80%; margin-right: 1%; margin-bottom: 0.5em;">
 
 
 
@@ -172,7 +172,7 @@ Qual seria então o papel do Núcleo?
 <br>
 <br>
 <video width="480" height="360" controls >
-<source src="./assets/img/apres_nuqnt_rev3.mp4" type="video/mp4">
+<source src="./assets/img/apres_nuqnt_rev4.mp4" type="video/mp4">
 </video>
 
 
@@ -219,11 +219,6 @@ Qual seria então o papel do Núcleo?
 <img src="./assets/img/modLog.png" style="float: center; width: 80%; margin:auto">
 
 *** =right
-
-
-```
-## Error in desc(Var1): could not find function "desc"
-```
 
 <img src="assets/fig/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
 
@@ -363,6 +358,5 @@ Códigos e apresentação disponíveis no<img src="./assets/img/gitlogo5.png" st
 <p>
 <a href="http://allanvc.github.io/apres_TCC2/" style="color:black">http://allanvc.github.io/slide_NMQ/</a>
 </p>
-
 
 

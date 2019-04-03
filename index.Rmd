@@ -47,7 +47,7 @@ cat('<iframe src="./assets/widgets/plotly_orcamento.html" width="90%" height="50
 
 
 --- .segue bg:grey
-# Como o FNDE manipula e utiliza esse grande volume de dados para gerar informação?
+# Como o FNDE manipula e utiliza esse grande volume de dados?
 
 
 
@@ -135,7 +135,7 @@ Qual seria então o papel do Núcleo?
 ## Localização
 <br>
 <br>
-<img src="./assets/img/organograma_NuQnt2.PNG" style="float: center; width: 80%; margin-right: 1%; margin-bottom: 0.5em;">
+<img src="./assets/img/organograma_NuQnt3.PNG" style="float: center; width: 80%; margin-right: 1%; margin-bottom: 0.5em;">
 
 
 
@@ -174,7 +174,7 @@ Qual seria então o papel do Núcleo?
 <br>
 <br>
 <video width="480" height="360" controls >
-<source src="./assets/img/apres_nuqnt_rev3.mp4" type="video/mp4">
+<source src="./assets/img/apres_nuqnt_rev4.mp4" type="video/mp4">
 </video>
 
 
@@ -227,6 +227,7 @@ cat('<iframe src="./assets/widgets/plotly_scatter2.html" width="90%" height="50%
 *** =right
 
 ```{r, echo=FALSE, warning=FALSE, cache=FALSE, fig.width = 4.7, fig.height = 4.7, fig.align = 'center'}
+library(dplyr) # para funcao desc()
 p <- readRDS("./dados/confusion_matrix_plot.rds")
 print(p)
 ```
@@ -363,6 +364,5 @@ Códigos e apresentação disponíveis no<img src="./assets/img/gitlogo5.png" st
 <p>
 <a href="http://allanvc.github.io/apres_TCC2/" style="color:black">http://allanvc.github.io/slide_NMQ/</a>
 </p>
-
 
 
