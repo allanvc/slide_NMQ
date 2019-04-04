@@ -1,6 +1,6 @@
 ---
 title       : Núcleo de Métodos Quantitativos (QUANT) - FNDE
-subtitle    : Proposta inicial de estruturação
+subtitle    : Proposta inicial de estruturação e funcionamento
 author      : Allan Quadros
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -63,19 +63,19 @@ ul.nav li{ font-size: 18px; line-height: 24px;}
 
 
 
---- .class #id
-## Exemplos (do que não fazer)
+<!-- --- .class #id -->
+<!-- ## Exemplos (do que não fazer) -->
 
-<br>
+<!-- <br> -->
 
-<img src="./assets/img/planilha_emendas.PNG" style="float: center; width: 100%; margin:auto">
+<!-- <img src="./assets/img/planilha_emendas.PNG" style="float: center; width: 100%; margin:auto"> -->
 
 
 
---- .class #id
-## Exemplos (do que não fazer)
+<!-- --- .class #id -->
+<!-- ## Exemplos (do que não fazer) -->
 
-<img src="./assets/img/survival_bias.jpg" style="float: center; width: 70%; margin:auto">
+<!-- <img src="./assets/img/survival_bias.jpg" style="float: center; width: 70%; margin:auto"> -->
 
 
 
@@ -184,14 +184,14 @@ Qual seria então o papel do Núcleo?
 
 
 
---- .class #id
-## Capacitação
-<br>
-<br>
-> - rodadas de capacitação com as diretorias
-  + Análise de Dados introdutória 
-  + R, Python & SQL
-  + Estatística Básica
+<!-- --- .class #id -->
+<!-- ## Capacitação -->
+<!-- <br> -->
+<!-- <br> -->
+<!-- > - rodadas de capacitação com as diretorias -->
+<!--  + Análise de Dados introdutória -->
+<!--  + R, Python & SQL -->
+<!--  + Estatística Básica -->
   
 
 
