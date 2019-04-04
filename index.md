@@ -72,18 +72,25 @@ ul.nav li{ font-size: 18px; line-height: 24px;}
 
 
 
---- &twocol
+--- .class #id
 ## Exemplos (do que não fazer)
-<br>
-*** =left
-> - <img src="./assets/img/indicador1.png" style="float: center; width: 100%; margin:auto">
 
-> - <img src="./assets/img/indicador2.png" style="float: center; width: 100%; margin:auto">
+<img src="./assets/img/survival_bias.jpg" style="float: center; width: 70%; margin:auto">
 
 
-*** =right
 
-> - <img src="./assets/img/survival_bias.jpg" style="float: center; width: 90%; margin:auto">
+<!-- --- &twocol -->
+<!-- ## Exemplos (do que não fazer) -->
+<!-- <br> -->
+<!-- *** =left -->
+<!-- > - <img src="./assets/img/indicador1.png" style="float: center; width: 100%; margin:auto"> -->
+
+<!-- > - <img src="./assets/img/indicador2.png" style="float: center; width: 100%; margin:auto"> -->
+
+
+<!-- *** =right -->
+
+<!-- > - <img src="./assets/img/survival_bias.jpg" style="float: center; width: 90%; margin:auto"> -->
 
 
 
@@ -155,15 +162,15 @@ Qual seria então o papel do Núcleo?
 
 
 
---- .class #id
-## Funcionamento
-<br>
-<br>
-> - análise contínua de dados dos programas e formulação de indicadores
-<br>
-> - sistema de concorrência de demandas $\Rightarrow$ projetos estratégicos
-    + presidência
-    + diretorias/prospecção do Núcleo junto as áreas
+<!-- --- .class #id -->
+<!-- ## Funcionamento -->
+<!-- <br> -->
+<!-- <br> -->
+<!-- > - análise contínua de dados dos programas e formulação de indicadores -->
+<!-- <br> -->
+<!-- > - sistema de concorrência de demandas $\Rightarrow$ projetos estratégicos -->
+<!--    + presidência -->
+<!--    + diretorias/prospecção do Núcleo junto as áreas -->
 
 
 
@@ -219,24 +226,6 @@ Qual seria então o papel do Núcleo?
 <img src="./assets/img/modLog.png" style="float: center; width: 80%; margin:auto">
 
 *** =right
-
-
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
 
 <img src="assets/fig/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
 

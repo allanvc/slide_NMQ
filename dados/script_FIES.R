@@ -255,7 +255,7 @@ library(dplyr)
 ## ordem correta:
 
 p <- ggplot(data = confusion_matrix,
-            mapping = aes(x = reorder(Var2, desc(Var2)),
+            mapping = aes(x = reorder(Var2, dplyr::desc(Var2)),
                           y = Var1)) +
   geom_tile(aes(fill = Freq)) +
   geom_text(aes(label = sprintf("%1.0f", Freq)), vjust = 1) +

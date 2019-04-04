@@ -74,18 +74,25 @@ cat('<iframe src="./assets/widgets/plotly_orcamento.html" width="90%" height="50
 
 
 
---- &twocol
+--- .class #id
 ## Exemplos (do que não fazer)
-<br>
-*** =left
-> - <img src="./assets/img/indicador1.png" style="float: center; width: 100%; margin:auto">
 
-> - <img src="./assets/img/indicador2.png" style="float: center; width: 100%; margin:auto">
+<img src="./assets/img/survival_bias.jpg" style="float: center; width: 70%; margin:auto">
 
 
-*** =right
 
-> - <img src="./assets/img/survival_bias.jpg" style="float: center; width: 90%; margin:auto">
+<!-- --- &twocol -->
+<!-- ## Exemplos (do que não fazer) -->
+<!-- <br> -->
+<!-- *** =left -->
+<!-- > - <img src="./assets/img/indicador1.png" style="float: center; width: 100%; margin:auto"> -->
+
+<!-- > - <img src="./assets/img/indicador2.png" style="float: center; width: 100%; margin:auto"> -->
+
+
+<!-- *** =right -->
+
+<!-- > - <img src="./assets/img/survival_bias.jpg" style="float: center; width: 90%; margin:auto"> -->
 
 
 
@@ -157,15 +164,15 @@ Qual seria então o papel do Núcleo?
 
 
 
---- .class #id
-## Funcionamento
-<br>
-<br>
-> - análise contínua de dados dos programas e formulação de indicadores
-<br>
-> - sistema de concorrência de demandas $\Rightarrow$ projetos estratégicos
-    + presidência
-    + diretorias/prospecção do Núcleo junto as áreas
+<!-- --- .class #id -->
+<!-- ## Funcionamento -->
+<!-- <br> -->
+<!-- <br> -->
+<!-- > - análise contínua de dados dos programas e formulação de indicadores -->
+<!-- <br> -->
+<!-- > - sistema de concorrência de demandas $\Rightarrow$ projetos estratégicos -->
+<!--    + presidência -->
+<!--    + diretorias/prospecção do Núcleo junto as áreas -->
 
 
 
@@ -227,7 +234,7 @@ cat('<iframe src="./assets/widgets/plotly_scatter2.html" width="90%" height="50%
 *** =right
 
 ```{r, echo=FALSE, warning=FALSE, cache=FALSE, fig.width = 4.7, fig.height = 4.7, fig.align = 'center'}
-library(dplyr) # para funcao desc()
+# library(dplyr) # para funcao desc() -- nao precisa, coloquei dplyr::desc()
 p <- readRDS("./dados/confusion_matrix_plot.rds")
 print(p)
 ```
