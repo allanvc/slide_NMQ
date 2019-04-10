@@ -152,7 +152,7 @@ Qual seria então o papel do Núcleo?
 <br>
 > - indicadores <img src="./assets/img/check_mark.svg" style="width: 2%">
 <br>
-> - estruturação/organização/governança de dados <img src="./assets/img/check_mark.svg" style="width: 2%">
+> - auxiliar na estruturação/organização/governança de dados <img src="./assets/img/check_mark.svg" style="width: 2%">
 <br>
 > - modelagem estatística/matemática <img src="./assets/img/check_mark.svg" style="width: 2%">
 <br>
@@ -197,14 +197,35 @@ Qual seria então o papel do Núcleo?
   
 
 
---- .class #id
+--- &twocol
 ## Como o Núcleo pode ajudar?
 
-> - <img src="./assets/img/inadimplencia_FIES.PNG" style="float: center; width: 50%; margin:auto">
+*** =left
 
-> - `ideia:` utilizar um modelo de regressão logística
+- <img src="./assets/img/inadimplencia_FIES.PNG" style="float: center; width: 100%; margin:auto">
 
-> - <img src="./assets/img/log_reg.PNG" style="width: 47%">
+- `ideia:` utilizar um modelo de regressão logística
+
+- <img src="./assets/img/log_reg.PNG" style="width: 100%">
+
+
+*** =right
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+```{r, echo=FALSE, warning=FALSE, cache=FALSE, size = "tiny"}
+confusion_matrix <- readRDS("./dados/confusion_matrix.rds")
+
+print(paste0("accuracy: ", round((confusion_matrix[1,1] + confusion_matrix[2,2])/sum(confusion_matrix), 2)))
+print(paste0("sensitivity: ", round(confusion_matrix[2,2]/sum(confusion_matrix[2,]), 2) ))
+print(paste0("specificity: ", round(confusion_matrix[1,1]/sum(confusion_matrix[1,]), 2) ))
+
+```
 
 
 
@@ -222,33 +243,6 @@ cat('<iframe src="./assets/widgets/plotly_scatter1.html" width="90%" height="50%
 ```{r, echo=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 cat('<iframe src="./assets/widgets/plotly_scatter2.html" width="90%" height="50%" scrolling="no" seamless="seamless" frameBorder="1"> </iframe>')
 ```
-
-
---- &twocol
-## Como o Núcleo pode ajudar?
-
-*** =left
-
-<img src="./assets/img/modLog.png" style="float: center; width: 80%; margin:auto">
-
-*** =right
-
-```{r, echo=FALSE, warning=FALSE, cache=FALSE, fig.width = 4.7, fig.height = 4.7, fig.align = 'center'}
-# library(dplyr) # para funcao desc() -- nao precisa, coloquei dplyr::desc()
-p <- readRDS("./dados/confusion_matrix_plot.rds")
-print(p)
-```
-
-```{r, echo=FALSE, warning=FALSE, cache=FALSE, size = "tiny"}
-confusion_matrix <- readRDS("./dados/confusion_matrix.rds")
-
-print(paste0("accuracy: ", round((confusion_matrix[1,1] + confusion_matrix[2,2])/sum(confusion_matrix), 2)))
-print(paste0("sensitivity: ", round(confusion_matrix[2,2]/sum(confusion_matrix[2,]), 2) ))
-print(paste0("specificity: ", round(confusion_matrix[1,1]/sum(confusion_matrix[1,]), 2) ))
-
-```
-
-<!-- falar do que um modelo bom de avaliação de risco de crédito para o sistema financeiro (mostrar aquele gráfico) -->
 
 
 
@@ -312,21 +306,6 @@ print(paste0("specificity: ", round(confusion_matrix[1,1]/sum(confusion_matrix[1
 
 
 
-
-
---- .class #id
-## FisFa - Fiscaliza Fatura FIES
-<br>
-<br>
-<!-- FisFa também transforma dados em informação: -->
-
-<video width="480" height="320" controls >
-<source src="./assets/img/FisFa_video2.mp4" type="video/mp4">
-</video>
-
-
-
-
 --- .class #id
 ## Cooperação Técnica & Parcerias
 
@@ -365,27 +344,6 @@ print(paste0("specificity: ", round(confusion_matrix[1,1]/sum(confusion_matrix[1
 > - Abrir os dados do FNDE para a comunidade acadêmica
 <br>
 > - Receber estudantes de pós-graduação e graduação
-  + criar um prêmio para trabalhos de conclusão de curso/dissertações/teses voltados para a análise de dados do FNDE
-  + no caso de pós-graduação, agraciar o vencedor com uma vaga de consultoria para tocar o projeto
-  + oferecer bolsas de estudos a estudantes de pós-graduação com projetos promissores 
-  + oferecer vagas de estágio para estudantes de graduação com projetos de conclusão de curso promissores
-
-
-
---- .class #id
-## Passos importantes para a estruturação do Núcleo
-
-<br>
-> - `Estruturação como unidade física` 
-<br>
-> - Portaria instituindo o Núcleo vinculado à AGEST, compondo a estrutura do Gabinete da presidência
-<br>
-> - formar inicialmente um Grupo de Trabalho (GT)
-  + servidores, consultores e terceirizados de preferência já com formação em área afim
-  + servidores e colaboradores full time
-  + alguns servidores com conhecimento especializado, mas que ocupam outros cargos, podem contribuir eventualmente
-<br>
-> - iniciar imediatamente revisão do regimento interno para contemplar a estrutura do Núcleo no organograma do FNDE
 
 
 
