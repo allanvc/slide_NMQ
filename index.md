@@ -132,7 +132,7 @@ ul.nav li{ font-size: 18px; line-height: 24px;}
 <br>
 Qual seria então o papel do Núcleo?
 
-> .fragment `Tratar problemas` cuja origem ou solução estão nos dados utilizados pela autarquia e `produzir conhecimento` a partir destes dados de modo a contribuir para a melhora da gestão da educação brasileira.
+> .fragment `Tratar problemas` cuja origem ou solução estão em dados internos ou externos à autarquia e `produzir conhecimento` a partir destes dados de modo a contribuir para gestão estratégica dos programas educacionais.
 
 
 

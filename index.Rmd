@@ -134,7 +134,7 @@ cat('<iframe src="./assets/widgets/plotly_orcamento.html" width="90%" height="50
 <br>
 Qual seria então o papel do Núcleo?
 
-> .fragment `Tratar problemas` cuja origem ou solução estão nos dados utilizados pela autarquia e `produzir conhecimento` a partir destes dados de modo a contribuir para a melhora da gestão da educação brasileira.
+> .fragment `Tratar problemas` cuja origem ou solução estão em dados internos ou externos à autarquia e `produzir conhecimento` a partir destes dados de modo a contribuir para gestão estratégica dos programas educacionais.
 
 
 
