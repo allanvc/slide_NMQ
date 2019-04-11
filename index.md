@@ -216,7 +216,7 @@ Qual seria então o papel do Núcleo?
 <br>
 <br>
 <br>
-> - Detectou inadimplentes em $\frac{3}{4}$ das vezes
+> - Detectou inadimplentes em ~ $\frac{3}{4}$ das vezes
 
 
 
