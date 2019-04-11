@@ -216,18 +216,7 @@ Qual seria então o papel do Núcleo?
 <br>
 <br>
 <br>
-
-```
-## [1] "accuracy: 0.66"
-```
-
-```
-## [1] "sensitivity: 0.73"
-```
-
-```
-## [1] "specificity: 0.57"
-```
+> - Detectou inadimplentes em $\frac{3}{4}$ das vezes
 
 
 
@@ -341,6 +330,8 @@ Qual seria então o papel do Núcleo?
 <br>
 > - Abrir os dados do FNDE para a comunidade acadêmica
 <br>
+<br>
+<br>
 > - Receber estudantes de pós-graduação e graduação
 
 
@@ -349,22 +340,3 @@ Qual seria então o papel do Núcleo?
 # Obrigado.
 
 <!-- como colocar figuras ao lado de palavras varias vezes em html -->
-<div>
-    <p>Feito no
-    <img src="./assets/img/rball.png" style="float: center; width: 5%;"> com 
-    <img src="./assets/img/slidifylogo2.png" style="float: center; width: 12%;">,
-    <img src="./assets/img/plotlylogo.png" style="float: center; width: 7%;"> e
-    <img src="./assets/img/ggplotlogo.png" style="float: center; width: 7%;"> . </p>
-</div>
-
-Códigos e apresentação disponíveis no<img src="./assets/img/gitlogo5.png" style="float: center; width: 13%;">:
-<br>
-<p>
-<a href="http://github.com/allanvc/" style="color:black">http://github.com/allanvc/</a>
-</p>
-
-<p>
-<a href="http://allanvc.github.io/apres_TCC2/" style="color:black">http://allanvc.github.io/slide_NMQ/</a>
-</p>
-
-
