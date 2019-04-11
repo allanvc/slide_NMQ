@@ -2,7 +2,7 @@
 title       : Núcleo de Métodos Quantitativos (QUANT) - FNDE
 subtitle    : Proposta inicial de estruturação e funcionamento
 author      : Allan Quadros
-job         : 
+job         : Estatístico - Assessor de Gestão Estratégica e Governança
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
